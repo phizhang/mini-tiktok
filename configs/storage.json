@@ -1,0 +1,10 @@
+{
+  "type": "local",
+  "s3": {
+    "bucket": "your-s3-bucket",
+    "region": "us-east-1"
+  },
+  "local": {
+    "base_path": "./videos"
+  }
+}

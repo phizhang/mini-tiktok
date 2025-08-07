@@ -1,6 +1,13 @@
 # mini tiktok
 
-A Go RESTful API project with Cassandra and AWS S3 integration.
+A mini tiktok backend implementation using golang for microservice and RESTful API,  Cassandra and AWS S3 integration.
+I plan to implement te following features:
+
+1. Video upload and list for current user. (done)
+2. Live stream server. (Ongoing)
+3. Following and unfollowing. (Planned)
+4. Video feeds from friends. (Planned)
+5. Global video feeds based on recommendation engine. (Planned)
 
 ## Folder Structure
 
@@ -20,6 +27,11 @@ A Go RESTful API project with Cassandra and AWS S3 integration.
 1. Install dependencies
 2. Configure Cassandra and AWS S3 credentials
 3. Run the application from `cmd/`
+
+## Storage Settings
+
+By default the uploaded vidro will be in the local disk of the mini-tiktok server, using user UUID as the bucket.
+We can also use environment variable to indicate S3 storage will be used.
 
 ## Running Cassandra with Docker
 

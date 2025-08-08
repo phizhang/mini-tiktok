@@ -90,7 +90,7 @@ curl -X POST \
   -F "title=My Video Title" \
   -F "tag=funny" \
   -F "file=@/path/to/your/video.mp4" \
-  http://localhost:8080/api/upload
+  http://localhost:8080/api/videos
 ```
 
 Replace `<your_user_id>` with your user ID and `/path/to/your/video.mp4` with the path to your video file.

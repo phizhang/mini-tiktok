@@ -28,7 +28,8 @@ func main() {
 
 	router := gin.Default()
 
-	router.POST("/api/upload", api.UploadVideoHandler)
+	router.POST("/api/videos", api.UploadVideoHandler)
+	router.GET("/api/videos", api.GetUserVideosHandler)
 
 	log.Println("Starting server on :8080...")
 	err := router.Run(":8080")

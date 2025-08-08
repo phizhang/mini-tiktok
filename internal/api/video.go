@@ -85,7 +85,7 @@ func UploadVideoHandler(c *gin.Context) {
 
 // GetUserVideosHandler returns the list of uploaded videos for a user
 func GetUserVideosHandler(c *gin.Context) {
-	userID := c.Param("user_id")
+	userID := c.GetHeader("X-User-ID") // Example: parse user ID from header (replace with real auth)
 	if userID == "" {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Missing user ID"})
 		return
